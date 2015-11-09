@@ -1,5 +1,5 @@
 <?php
-    // 索引数组
+    /*// 索引数组
     $index_arr = array('Super', 'Chao');
 
     // 关联数组
@@ -16,5 +16,16 @@
     // 关联数组
     forEach($key_arr as $key => $val) {
         echo '<br>'.$key.'今年'.$val.'岁.';
-    }
+    }*/
+
+    /* 根据值进行排序操作*/
+    $nums = array(20, 10, 32, 4);
+    sort($nums);
+    var_dump($nums);
+    echo '<br>';
+    rsort($nums);
+    var_dump($nums);
+
+    /* 根据key进行排序操作*/
+
 ?>
