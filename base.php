@@ -35,11 +35,14 @@
     
     /* 数据类型
     String, Integer, Float, Boolean, Array, Object, Null
+    不能单纯对对象，方法进行检测
     */
-    class obj {
+    /*class obj {
         var $a = 'aa';
     }
-
+    function fun () {
+        return 123;
+    }
     var_dump(123);// 类型检测
     echo '<br>';
     var_dump(12.3);
@@ -52,5 +55,13 @@
     echo '<br>';
     var_dump(null);
     echo '<br>';
-    // var_dump(obj);
+    var_dump(new obj);
+    echo '<br>';
+    var_dump(fun());*/
+
+    /* 常量
+    变量名，值，是否大小写不敏感(默认false，敏感)
+    */
+    define('PI', 3.14);
+    echo PI;
 ?>
