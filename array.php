@@ -18,7 +18,8 @@
         echo '<br>'.$key.'今年'.$val.'岁.';
     }*/
 
-    /* 根据值进行排序操作*/
+    /*// 索引数组
+    // 根据值进行排序操作
     $nums = array(20, 10, 32, 4);
     sort($nums);
     var_dump($nums);
@@ -26,6 +27,42 @@
     rsort($nums);
     var_dump($nums);
 
-    /* 根据key进行排序操作*/
-    
+    $student = array('Mr' => 'Super', 'Ze' => 'Chao');
+    // 关联数组
+    // 根据值进行升序操作
+    asort($student);
+    echo '<br>';
+    var_dump($student);
+    // 根据键进行升序操作
+    ksort($student);
+    echo '<br>';
+    var_dump($student);
+    // 根据值进行降序操作
+    arsort($student);
+    echo '<br>';
+    var_dump($student);
+    // 根据键进行降序操作
+    krsort($student);
+    echo '<br>';
+    var_dump($student);*/
+
+    $result = array();
+
+    if (empty($result['banner'])) {
+        $result['banner'] = array();
+    }
+
+    array_push($result['banner'], array(array('name' => 'Super'), array('age' => 24)));
+
+    $box = end($result['banner'][0]);
+
+    array_push($box, array('like', '??'));
+
+    array_push($result['banner'][0], array('like', '??'));
+
+    echo var_dump($result['banner'][0]);
+
+    echo '<br>';
+
+    // echo intval('abac', 10);
 ?>
