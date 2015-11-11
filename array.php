@@ -46,23 +46,29 @@
     echo '<br>';
     var_dump($student);*/
 
-    $result = array();
+    // $result = array();
 
-    if (empty($result['banner'])) {
-        $result['banner'] = array();
-    }
+    // if (empty($result['banner'])) {
+    //     $result['banner'] = array();
+    // }
 
-    array_push($result['banner'], array(array('name' => 'Super'), array('age' => 24)));
+    // array_push($result['banner'], array(array('name' => 'Super'), array('age' => 24)));
 
-    $box = end($result['banner'][0]);
+    // $box = end($result['banner'][0]);
 
-    array_push($box, array('like', '??'));
+    // array_push($box, array('like', '??'));
 
-    array_push($result['banner'][0], array('like', '??'));
+    // array_push($result['banner'][0], array('like', '??'));
 
-    echo var_dump($result['banner'][0]);
+    // echo var_dump($result['banner'][0]);
 
-    echo '<br>';
+    // echo '<br>';
 
     // echo intval('abac', 10);
+
+    $arr = array(1, '', '    ', ' ', 2);
+    array_filter($arr, function ($ele) {
+        return trim($ele);
+    });
+    echo var_dump($arr);
 ?>

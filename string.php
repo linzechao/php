@@ -30,5 +30,29 @@
         break;
     }
 
-    
+    echo '<br>';
+
+    function autoDomain($src) {
+        if (!$src) {return null;}
+        $tmp = strtoupper($src);
+        echo $tmp.'-->>';
+
+        if (0 === stripos($tmp, 'HTTP://') || 0 === stripos($tmp, 'HTTPS://')) {
+            return $src;
+        } else {
+            return 'http://wwwwwwwwwww:/com'.$src;
+        }
+    }
+
+    echo autoDomain('http://abck.cn');
+    echo '<br>';
+
+    echo autoDomain('abck/ab/aba');
+    echo '<br>';
+
+    echo autoDomain('https://abck.com');
+    echo '<br>';
+
+    echo autoDomain('ddeewwssgg;');
+    echo '<br>';
 ?>
