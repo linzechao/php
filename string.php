@@ -55,4 +55,13 @@
 
     echo autoDomain('ddeewwssgg;');
     echo '<br>';
+
+    echo var_dump(strval(1234));
+    echo '<br>';
+
+    $n = 123;
+    if (is_null($n)) {
+        echo 'is null';
+    }
+    
 ?>
