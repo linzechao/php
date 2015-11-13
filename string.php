@@ -64,4 +64,7 @@
         echo 'is null';
     }
     
+    echo '<br>';
+    $str = '../aa/bb/cc.zip';
+    echo strrpos($str, '.1zip') == 0;
 ?>
