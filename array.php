@@ -66,9 +66,54 @@
 
     // echo intval('abac', 10);
 
-    $arr = array(1, '', '    ', ' ', 2);
-    array_filter($arr, function ($ele) {
-        return trim($ele);
-    });
-    echo var_dump($arr);
+    // $arr = array(1, '', '    ', ' ', 2);
+    // array_filter($arr, function ($ele) {
+    //     return trim($ele);
+    // });
+    // echo var_dump($arr);
+
+    /*$example = array('name' => 'Super', 'age' => 24); 
+    // 将key转换大小写
+    var_dump(array_change_key_case($example, CASE_UPPER)); // 大写
+    echo '<br>';
+    var_dump(array_change_key_case($example, CASE_LOWER)); // 小写
+    echo '<br>';
+
+    // 以个数为准，分割数组
+    // true: 保留原来的key值，false全部从0开始
+    var_dump(array_chunk($example, 1, true));
+    echo '<br>';*/
+
+    $example = array(
+        array(
+            'id' => 5698,
+            'first_name' => 'Peter',
+            'last_name' => 'Griffin',
+        ),
+        array(
+            'id' => 4767,
+            'first_name' => 'Ben',
+            'last_name' => 'Smith',
+        ),
+        array(
+            'id' => 3809,
+            'first_name' => 'Joe',
+            'last_name' => 'Doe',
+        )
+    );
+
+    // PHP5.5+
+    // var_dump(array_column($example, 'first_name'));
+
+    $key = array('age', 'name');
+    $val = array(24, 'super');
+
+    var_dump(array_combine($key, $val));
+    echo '<br>';
+
+    // 区分大小写，计算总数
+    $count = array('A', 'Cat', 'Dog', 'A', 'DOG');
+    var_dump(array_count_values($count));
+
+    
 ?>
