@@ -72,12 +72,19 @@
 
     echo '<br>';
     // 多分支
-    echo 'elseif推荐使用，至于什么鬼性能，就不知道了。';
+    echo 'elseif推荐使用，至于什么鬼性能，就不知道了。<br>';
+    echo 'elseif是多分支，else if是嵌套语句<br>';
     if (true) {
 
     } elseif (false) {
 
     }
+
+    echo 'else if => <br>';
+    echo 'else {<br>';
+    echo '    if () {<br>';
+    echo '    }<br>';
+    echo '}';
 
     echo '<hr>';
 
@@ -89,3 +96,4 @@
         }
         echo $w.'<br>';
     }*/
+
