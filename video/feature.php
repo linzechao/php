@@ -1,4 +1,6 @@
 <?
+    header('Content-Type:text/html;charset=utf-8');
+
     IF (1) {
         echo '// 关键字不区分大小写，变量名区分大小写';
         eChO '<br>';
@@ -79,11 +81,11 @@
 
     echo '<hr>';
 
-    $w = 1;
+    /*$w = 1;
     while ($w < 10) {
         ++$w;
         if (!$w % 3) {
             break;
         }
         echo $w.'<br>';
-    }
+    }*/
