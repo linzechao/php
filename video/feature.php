@@ -11,7 +11,7 @@
     $x = array('arr' => array('super', 'chao'));
     $y = $x['arr'];
     array_push($y, 'lin');
-    var_dump($x);
+    print_r($x);
 
     echo '<hr>';
 
@@ -20,14 +20,20 @@
     $a = array('arr' => array('super', 'chao'));
     $b = &$a['arr'];
     array_push($b, 'lin');
-    var_dump($a);
+    print_r($a);
 
     echo '<hr>';
 
-    echo '// 销毁变量名';
+    echo '// 销毁变量名', '<br>';
+    echo 'unset()';
     echo '<br>';
     unset($a);
-    var_dump($b);
+    print_r($b);
+
+    echo '<hr>';
+
+    echo '// 判断是否设置了变量', '<br>';
+    echo 'isset()';
 
     echo '<hr>';
 
@@ -51,3 +57,33 @@
     IF (!defined("COUNTANT")) {
         ECHO '未定义COUNTANT';
     };
+
+    // 判断是否为数字或数字字符串
+    is_numeric('1234');
+
+    // 判断是否为整数
+    is_int(123.4);
+
+    echo '<br>';
+
+    var_dump(+'44');
+
+    echo '<br>';
+    // 多分支
+    echo 'elseif推荐使用，至于什么鬼性能，就不知道了。';
+    if (true) {
+
+    } elseif (false) {
+
+    }
+
+    echo '<hr>';
+
+    $w = 1;
+    while ($w < 10) {
+        ++$w;
+        if (!$w % 3) {
+            break;
+        }
+        echo $w.'<br>';
+    }

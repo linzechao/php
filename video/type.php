@@ -27,8 +27,10 @@
     echo '2、对象';
     echo '<hr>';
 
-    echo '<h3>3、</h3>';
-    echo '<hr>';
-
-    echo '<h3>4、</h3>';
+    echo '<h3>3、特殊类型</h3>';
+    echo '1、resource资源';
+    echo '<br>';
+    echo '非PHP的数据，即是资源类型';
+    echo '<br>';
+    echo '2、NULL';
     echo '<hr>';
