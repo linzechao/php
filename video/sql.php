@@ -80,8 +80,9 @@
     echo '# 查询数据<br>';
     echo 'select * from tabName [where] [order by age (desc-降序 || asc-升序-默认)] [limit 0, 10];';
 
-
-
+    echo '<hr>';
+    echo '# 聚合函数<br>';
+    echo 'sum(求和)，avg(求平均值)，max(最大值)，min(最小值)，count(记录数);';
 
     echo '<hr>';
     echo '# 注意<br>';
