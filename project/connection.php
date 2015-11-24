@@ -39,6 +39,9 @@
         var_dump($result);
         echo '...</span><br>';
 
+        # 获取总数
+        echo '<span class="text-primary">总数：', mysql_num_rows($result), '</span><br>';
+
         $table = '<table class="table table-hover table-bordered table-striped table-condensed"><thead><tr>'.
             '<th>ID</th>'.
             '<th>Name</th>'.
@@ -72,6 +75,11 @@
 
         $table .= '</tbody></table>';
         echo $table;
+
+        # 查询：select、show -> 记录集
+        # 操作：insert、update、dalete、drop -> boolean || null
+
+
 
         # 释放资源
         # 自动执行释放资源，可不必要手动
