@@ -40,7 +40,7 @@
     echo '<hr>';
     echo '# 创建表<br>';
     echo 'create table tabName (<br>';
-    echo 'id int [null || not null] [default = def] [auto_increment] [primary key]<br>';
+    echo 'id int [null || not null] [default "def"] [auto_increment] [primary key]<br>';
     echo ');<br>';
     echo '# 主键可以由多个字段一起组成';
 
@@ -58,4 +58,32 @@
 
     echo '<hr>';
     echo '# 显示表结构<br>';
-    echo 'describe tabName;';
+    echo '(describe || desc) tabName;';
+
+    echo '<hr>';
+    echo '# 删除表<br>';
+    echo 'drop table tabName[, ..., ...];';
+
+    echo '<hr>';
+    echo '# 增加数据<br>';
+    echo 'insert into tabName (id, name) values (null, "super");<br>';
+
+    echo '<hr>';
+    echo '# 删除数据<br>';
+    echo 'delete from tabName [where];';
+
+    echo '<hr>';
+    echo '# 修改数据<br>';
+    echo 'update tabName set name = "super", sex = "man" where id = 44;';
+
+    echo '<hr>';
+    echo '# 查询数据<br>';
+    echo 'select * from tabName [where] [order by age (desc-降序 || asc-升序-默认)] [limit 0, 10];';
+
+
+
+
+    echo '<hr>';
+    echo '# 注意<br>';
+    echo 'utf8, 没有横杠；f赋值与判断相等，都是=号；不相等使用<><br>';
+    echo '与、或、非 -> and、or、not<br>';
