@@ -1,5 +1,5 @@
 <?
-    header('Content-Type:text/html;charset=utf-8');
+    header('Content-Type: text/html; charset = utf-8');
 
     IF (1) {
         echo '// 关键字不区分大小写，变量名区分大小写';
