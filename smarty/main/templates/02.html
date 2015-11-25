@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="cmn-Hands">
+<head>
+    <meta charset="utf-8">
+    <title>02.html</title>
+</head>
+<body>
+    <header>02.html</header>
+    <p>about me.</p>
+    <ul>
+        <li>
+            <!-- $_GET['name']-->
+            请求参：name: {$smarty.get.name}
+        </li>
+        <li>
+            时间戳：{$smarty.now}
+        </li>
+        <li>
+            格式化：{$smarty.now|date_format:'%Y-%m-%d %H:%M:%S'}
+        </li>
+        <li>
+            常量值：{$smarty.const.HOST}
+        </li>
+        <li>
+            模板名：{$smarty.template}
+        </li>
+    </ul>
+</body>
+</html>
