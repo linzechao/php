@@ -67,4 +67,8 @@
     echo '<br>';
     $str = '../aa/bb/cc.zip';
     echo strrpos($str, '.1zip') == 0;
+
+    echo '<hr>';
+
+    echo '|'.preg_replace('/\D/', '', '`63W19BB2DR40S81`A').'|';
 ?>
