@@ -1,0 +1,25 @@
+<!-- 不管哪种方式，都得引入以下语句-->
+{config_load file="site.conf" section="shenlin"}
+<!DOCTYPE html>
+<html lang="cmn-Hands">
+<head>
+    <meta charset="utf-8">
+    <title>03.html</title>
+    {literal}
+    <style>
+        body {background-color: #eee;}
+    </style>
+    {/literal}
+</head>
+<body>
+    <p>{#NETWORK#}</p>
+    <p>{#POLICE#}</p>
+    <p>{#ALLOW#}</p>
+    <hr>
+    <p>{$smarty.config.NETWORK}</p>
+    <p>{$smarty.config.POLICE}</p>
+    <p>{$smarty.config.ALLOW}</p>
+    <hr>
+    <p>{#NUMBER#}</p>
+</body>
+</html>

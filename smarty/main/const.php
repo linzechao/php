@@ -1,4 +1,6 @@
 <?
+    # 全局变量、常量的使用
+
     # 引入实例化
     require_once('./libs/Smarty.class.php');
     $smarty = new Smarty;
@@ -11,7 +13,5 @@
     # $GLOBALS, $_FILES不能用
 
     $smarty -> assign('name', $_GET['name']);
-
-
 
     $smarty -> display('02.html');

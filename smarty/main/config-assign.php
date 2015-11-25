@@ -1,4 +1,6 @@
 <?
+    # 配置与assign使用
+
     # 引入实例化
     require_once('./libs/Smarty.class.php');
     $smarty = new Smarty;
