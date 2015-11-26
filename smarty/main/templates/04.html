@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <title>04.html</title>
+</head>
+<body>
+    <p>
+        Name: {$set.name}
+    </p>
+    <p>
+        Mini: {$set['mini']}
+    </p>
+    {*
+        这是一条注释
+    *}
+
+    <ul>
+        {foreach $list as $key => $val}
+            <li>{$val}</li>
+        {foreachelse}
+            <li>没有任何元素</li>
+        {/foreach}
+    </ul>
+
+    <pre>
+        foreach遍历关联数组
+        值变量@iteration -- 从1开始
+        值变量@index -- 从0开始
+        值变量@first -- 判断是否第一个元素
+        值变量@last -- 判断是否最后一个元素
+        值变量@total -- 数组长度
+        值变量@show -- 数组是否有值
+    </pre>
+
+    <ol>
+        {foreach $list as $k => $v}
+            {if $v@first}
+                <li style="background-color: blue; color: white;">第一个元素：{$v}</li>
+            {elseif $v@iteration % 2 === 1}
+                <li style="background-color: lightblue;">{$k} -> {$v}</li>
+            {else}
+                <li>{$v@index} == {$v@iteration}: {$k} -> {$v}</li>
+            {/if}
+        {foreachelse}
+            <li>没有任何元素</li>
+        {/foreach}
+    </ol>
+
+    <!-- 只适用索引数组-->
+    <ol>
+        {section name="key" loop="$list"}
+            <li>{$list.key}</li>
+        {/section}
+    </ol>
+</body>
+</html>
