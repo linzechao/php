@@ -27,6 +27,11 @@
     # {nocache}...{/nocache}
 
     # 缓存集合
+    $a = $_GET['a'];
+    $b = $_GET['b'];
+    $c = $_GET['c'];
+    $d = $_GET['d'];
+
 
 
     # 假如是分页
