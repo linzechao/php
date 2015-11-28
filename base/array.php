@@ -115,5 +115,7 @@
     $count = array('A', 'Cat', 'Dog', 'A', 'DOG');
     var_dump(array_count_values($count));
 
-    
+    echo '<br>';
+    $theme = array('Silvery', 'WZA', 'TON');
+    var_dump(in_array('TON', $theme));
 ?>
