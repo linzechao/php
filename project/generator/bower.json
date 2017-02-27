@@ -1,0 +1,26 @@
+{
+  "name": "basic",
+  "version": "0.0.1",
+  "authors": [
+    "Mr. Super <linzechao44@163.com>"
+  ],
+  "description": "think php basic.",
+  "main": "index.php",
+  "moduleType": [],
+  "keywords": [
+    "think",
+    "php"
+  ],
+  "license": "MIT",
+  "homepage": "http://basic",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}
